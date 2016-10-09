@@ -1,6 +1,6 @@
 # Android-Code-Style
 
-## 1. 约定1
+## 1. 约定
 
 * **Activity.onCreate()，Fragment.onActivityCreated()，紧跟成员变量后，方法内部保持简单，尽量只调用initXXX()方法，如：initData()，initView()。**
 * 调用方法保持**“临近原则”**，被调用的方法，放在调用方法下方
@@ -113,7 +113,7 @@ drawXXX()	| 绘制数据或效果相关的，使用draw前缀标识
 
 **规则：** 使用驼峰规则，首字母必须小写，使用名词或名词词组。要求简单易懂，富于描述，不允许出现无意义或错误单词。
 
-* 成员变量命名，自定义变量前添加m前缀，布局控件变量不用添加m前缀
+* 成员变量命名，自定义变量重复了自动+1，eg：view,view1
 * 常量命名，全部大写，单词间用下划线隔开
 
 
@@ -182,7 +182,7 @@ drawXXX()	| 绘制数据或效果相关的，使用draw前缀标识
 
 ## View project on GitHub
 
-* [https://github.com/tianshaojie/android-code-style](https://github.com/tianshaojie/android-code-style)
+* [https://github.com/hzl512/android-code-style](https://github.com/hzl512/android-code-style)
 
 
 
