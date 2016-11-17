@@ -111,11 +111,26 @@ drawXXX()	| 绘制数据或效果相关的，使用draw前缀标识
 
 ### 2.6. 变量命名
 
-**规则：** 使用驼峰规则，首字母必须小写，使用名词或名词词组。要求简单易懂，富于描述，不允许出现无意义或错误单词。
+**规则1：** 使用驼峰规则，首字母必须小写，使用名词或名词词组。要求简单易懂，富于描述，不允许出现无意义或错误单词。
 
 * 成员变量命名，自定义变量重复了自动+1，eg：view,view1
 * 常量命名，全部大写，单词间用下划线隔开
 
+**规则2：** 使用驼峰规则，首字母必须小写，使用名词或名词词组。要求简单易懂，富于描述，不允许出现无意义或错误单词。
+
+* 常量命名，全部大写，单词间用下划线隔开
+* 非公开，非静态字段名以m开头
+* 静态字段名以s开头。
+* 其他字段开始与小写字母。
+* 公共静态最终字段（常量）是ALL_CAPS_WITH_UNDERSCORES。
+public class MyClass {
+    public static final int SOME_CONSTANT = 42;
+    public int publicField;
+    private static MyClass sSingleton;
+    int mPackagePrivate;
+    private int mPrivate;
+    protected int mProtected;
+}
 
 ## 3. 其他规范
 * Activity继承BaseFragmentActivity或SwipeBackActivity，可以使用ButterKnife注解代替findViewById
@@ -184,5 +199,7 @@ drawXXX()	| 绘制数据或效果相关的，使用draw前缀标识
 
 * [https://github.com/hzl512/android-code-style](https://github.com/hzl512/android-code-style)
 
+##refrece
+* [http://source.android.com/source/code-style.html#follow-field-naming-conventions](http://source.android.com/source/code-style.html#follow-field-naming-conventions)
 
 
