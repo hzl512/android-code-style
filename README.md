@@ -124,14 +124,14 @@ drawXXX()	| 绘制数据或效果相关的，使用draw前缀标识
 * 其他字段开始与小写字母。
 * 公共静态最终字段（常量）是ALL_CAPS_WITH_UNDERSCORES。
 * For example:
-*  public class MyClass {
-*     public static final int SOME_CONSTANT = 42;
-*     public int publicField;
-*     private static MyClass sSingleton;
-*     int mPackagePrivate;
-*     private int mPrivate;
-*     protected int mProtected;
-* }
+  *public class MyClass {
+       *public static final int SOME_CONSTANT = 42;
+       *public int publicField;
+       *private static MyClass sSingleton;
+       *int mPackagePrivate;
+       *private int mPrivate;
+       *protected int mProtected;
+   *}
 
 ## 3. 其他规范
 * Activity继承BaseFragmentActivity或SwipeBackActivity，可以使用ButterKnife注解代替findViewById
